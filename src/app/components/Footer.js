@@ -1,6 +1,7 @@
 /* eslint jsx-quotes: ["error", "prefer-double"] */
 import React from 'react'
 import './Footer.css'
+import { UnsplashCredit } from './UnsplashCredit'
 
 export const Footer = () => {
   return (
@@ -50,38 +51,7 @@ export const Footer = () => {
               </span>
             </div>
             <div className="col-4">
-              <div id="background-image-box">
-                <span id="bkgnd-image-credit">
-                  Background Image:{' '}
-                  <a
-                    href="https://unsplash.com/@davidmoum?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    title="Download free do whatever you want high-resolution photos from David Moum"
-                  >
-                    <span style={{ display: 'inline-block', padding: '2px 3px' }}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        style={{
-                          height: '12px',
-                          width: 'auto',
-                          position: 'relative',
-                          verticalAlign: 'middle',
-                          top: '-2px',
-                          fill: 'white'
-                        }}
-                        viewBox="0 0 32 32"
-                      >
-                        <title>unsplash-logo</title>
-                        <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z" />
-                      </svg>
-                    </span>
-                    <span style={{ display: 'inline-block', padding: '2px 3px' }}>
-                      David Moum
-                    </span>
-                  </a>
-                </span>
-              </div>
+              <UnsplashCredit />
             </div>
           </div>
         </div>
