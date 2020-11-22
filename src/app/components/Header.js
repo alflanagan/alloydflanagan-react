@@ -6,7 +6,9 @@ export const Header = () => {
   return (
     <header className="masthead mb-auto">
       <div className="inner">
-        <h3 className="masthead-brand">Adrian L Flanagan</h3>
+        <div>
+          <h3 className="masthead-brand">Adrian L Flanagan</h3>
+        </div>
         <nav className="nav nav-masthead justify-content-center app-nav">
           <span className="nav-link"><a href="/">Home</a></span>
           <span className="nav-link"><a href="/about_me">About Me</a></span>

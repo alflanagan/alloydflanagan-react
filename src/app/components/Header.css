@@ -1,10 +1,13 @@
 .masthead {
-  max-width: 55em;
+  max-width: 65em;
   margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .masthead-brand {
   margin-bottom: 0;
+  float: left;
 }
 
 .nav-masthead .nav-link {
