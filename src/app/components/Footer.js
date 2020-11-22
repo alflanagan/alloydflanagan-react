@@ -1,5 +1,6 @@
 /* eslint jsx-quotes: ["error", "prefer-double"] */
 import React from 'react'
+import './Footer.css'
 
 export const Footer = () => {
   return (
@@ -61,7 +62,14 @@ export const Footer = () => {
                     <span style={{ display: 'inline-block', padding: '2px 3px' }}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white"
+                        style={{
+                          height: '12px',
+                          width: 'auto',
+                          position: 'relative',
+                          'vertical-align': 'middle',
+                          top: '-2px',
+                          fill: 'white'
+                        }}
                         viewBox="0 0 32 32"
                       >
                         <title>unsplash-logo</title>
