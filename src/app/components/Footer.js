@@ -52,7 +52,7 @@ export const Footer = () => {
             <div className="col-4">
               <div id="background-image-box">
                 <span id="bkgnd-image-credit">
-                  Background Image:
+                  Background Image:{' '}
                   <a
                     href="https://unsplash.com/@davidmoum?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
                     target="_blank"
@@ -66,7 +66,7 @@ export const Footer = () => {
                           height: '12px',
                           width: 'auto',
                           position: 'relative',
-                          'vertical-align': 'middle',
+                          verticalAlign: 'middle',
                           top: '-2px',
                           fill: 'white'
                         }}

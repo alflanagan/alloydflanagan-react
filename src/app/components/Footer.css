@@ -1,12 +1,12 @@
 footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  flex-shrink: 0;
 }
 
 .mastfoot {
   max-width: 55em;
   color: rgba(255, 255, 255, .5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .mastfoot .tech-note {
