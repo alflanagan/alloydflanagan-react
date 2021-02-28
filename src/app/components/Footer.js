@@ -1,5 +1,9 @@
 /* eslint jsx-quotes: ["error", "prefer-double"] */
 import React from 'react'
+import {
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
+} from 'reactstrap'
 import './Footer.css'
 import { UnsplashCredit } from './UnsplashCredit'
 
@@ -30,6 +34,13 @@ export const Footer = () => {
                     target="_blank"
                   >
                     React
+                  </a>,{' '}
+                  <a
+                    href="https://redux.js.org/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Redux
                   </a>
                 </div>
                 <div>
@@ -46,9 +57,11 @@ export const Footer = () => {
               </aside>
             </div>
             <div className="col-4">
-              <span style={{ color: 'black', backgroundColor: 'darkgrey' }}>
-                &copy; A Lloyd Flanagan 2020 License GPL3.
-              </span>
+              <Card>
+                <CardBody className="p-1 text-dark">
+                  <CardText>&copy; A Lloyd Flanagan 2020 License GPL3.</CardText>
+                </CardBody>
+              </Card>
             </div>
             <div className="col-4">
               <UnsplashCredit />
