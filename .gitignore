@@ -31,3 +31,4 @@ yarn-out.log*
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+.vercel

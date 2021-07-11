@@ -59,7 +59,7 @@ export const Footer = () => {
             <div className="col-4">
               <Card>
                 <CardBody className="p-1 text-dark">
-                  <CardText>&copy; A Lloyd Flanagan 2020 License GPL3.</CardText>
+                  <CardText>&copy; A Lloyd Flanagan 2021 License GPL3.</CardText>
                 </CardBody>
               </Card>
             </div>
