@@ -1,5 +1,4 @@
 .masthead {
-  max-width: 65em;
   margin-bottom: 2rem;
   margin-right: auto;
   margin-left: auto;
@@ -8,14 +7,22 @@
 .masthead-brand {
   margin-bottom: 0;
   float: left;
+  color: black;
+  margin-top: 2rem;
+}
+
+.nav-masthead {
+  margin-top: 1rem;
 }
 
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
+  font-variant: small-caps;
   color: rgba(255, 255, 255, .5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
+  font-size: 1.5rem;
 }
 
 .nav-masthead .nav-link:hover,

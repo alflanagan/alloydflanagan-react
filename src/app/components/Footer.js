@@ -13,7 +13,8 @@ export const Footer = () => {
       <div className="inner">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+          <div className="col"></div>
+            <div className="col-3">
               <aside className="tech-note">
                 <div>
                   Based on a design by{' '}
@@ -56,16 +57,19 @@ export const Footer = () => {
                 </div>
               </aside>
             </div>
-            <div className="col-4">
+            <div className="col"></div>
+            <div className="col-3">
               <Card>
                 <CardBody className="p-1 text-dark">
                   <CardText>&copy; A Lloyd Flanagan 2021 License GPL3.</CardText>
                 </CardBody>
               </Card>
             </div>
-            <div className="col-4">
+            <div className="col"></div>
+            <div className="col-3">
               <UnsplashCredit />
             </div>
+            <div className="col"></div>
           </div>
         </div>
       </div>
