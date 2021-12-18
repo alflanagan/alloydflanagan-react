@@ -1,3 +1,11 @@
+# alloydflangan-react: React Version of my Personal Website
+
+This project provides the front end for alflanagan/alloydflanagan_wag, which uses [Wagtail](https://wagtail.io) as a
+content mangement system (built on top of [Django](https://djangproject.com))
+
+
+# Boilerplate from create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
