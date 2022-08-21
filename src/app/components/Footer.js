@@ -1,8 +1,7 @@
 /* eslint jsx-quotes: ["error", "prefer-double"] */
 import React from 'react'
 import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
+  Card, CardText, CardBody,
 } from 'reactstrap'
 import './Footer.css'
 import { UnsplashCredit } from './UnsplashCredit'
