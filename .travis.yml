@@ -1,0 +1,10 @@
+language: node_js
+os:
+  - linux
+dist: focal
+node_js:
+  - lts/erbium
+  - lts/fermium
+  - lts/gallium
+  # "stable" fails to install on osx :eyeroll"
+  # - stable
