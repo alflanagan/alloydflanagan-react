@@ -1,4 +1,3 @@
-/* eslint jsx-quotes: ["error", "prefer-double"] */
 import React from 'react'
 import {
   Card, CardText, CardBody,
@@ -60,7 +59,7 @@ export const Footer = () => {
             <div className="col-3">
               <Card>
                 <CardBody className="p-1 text-dark">
-                  <CardText>&copy; A Lloyd Flanagan 2021 License GPL3.</CardText>
+                  <CardText>&copy; A Lloyd Flanagan 2022 License GPL3.</CardText>
                 </CardBody>
               </Card>
             </div>
