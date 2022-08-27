@@ -15,9 +15,11 @@ export const Header = () => {
           <span className="nav-link"><a href="/contact">Contact Me</a></span>
           <span className="nav-link"><a href="/blog">Blog</a></span>
           <span className="nav-link"><a href="/portfolio">Portfolio</a></span>
+          { /* }
           <span className="nav-link"><a href="/accounts/logout">Logout</a></span>
           <span className="nav-link"><a href="/accounts/login">Login</a></span>
           <span className="nav-link"><a href="/accounts/signup">Register</a></span>
+  { */ }
         </nav>
       </div>
     </header>
