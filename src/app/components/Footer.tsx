@@ -1,10 +1,7 @@
-import React from 'react'
-import {
-  Card, CardText, CardBody,
-} from 'reactstrap'
+import { Card, CardText, CardBody } from 'reactstrap'
 import './Footer.css'
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   return (
     <footer className="mastfoot mt-auto app-footer">
       <div className="inner">
@@ -31,14 +28,14 @@ export const Footer = () => {
                     target="_blank"
                   >
                     React
-                  </a>,{' '}
+                  </a>
+                  ,{' '}
                   <a
                     href="https://redux.js.org/"
                     rel="noreferrer"
                     target="_blank"
                   >
-                    Redux.
-                    &nbsp;&nbsp;
+                    Redux. &nbsp;&nbsp;
                   </a>
                   Styles are based on{' '}
                   <a
@@ -56,7 +53,9 @@ export const Footer = () => {
             <div className="col-5">
               <Card>
                 <CardBody className="p-1 text-dark">
-                  <CardText>&copy; A Lloyd Flanagan 2022 License GPL3.</CardText>
+                  <CardText>
+                    &copy; A Lloyd Flanagan 2022 License GPL3.
+                  </CardText>
                 </CardBody>
               </Card>
             </div>
