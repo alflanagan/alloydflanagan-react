@@ -3,7 +3,6 @@ import {
   Card, CardText, CardBody,
 } from 'reactstrap'
 import './Footer.css'
-import { UnsplashCredit } from './UnsplashCredit'
 
 export const Footer = () => {
   return (
@@ -11,8 +10,7 @@ export const Footer = () => {
       <div className="inner">
         <div className="container">
           <div className="row">
-          <div className="col"></div>
-            <div className="col-3">
+            <div className="col-5">
               <aside className="tech-note">
                 <div>
                   Based on a design by{' '}
@@ -39,10 +37,9 @@ export const Footer = () => {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    Redux
+                    Redux.
+                    &nbsp;&nbsp;
                   </a>
-                </div>
-                <div>
                   Styles are based on{' '}
                   <a
                     href="https://getbootstrap.com"
@@ -56,18 +53,13 @@ export const Footer = () => {
               </aside>
             </div>
             <div className="col"></div>
-            <div className="col-3">
+            <div className="col-5">
               <Card>
                 <CardBody className="p-1 text-dark">
                   <CardText>&copy; A Lloyd Flanagan 2022 License GPL3.</CardText>
                 </CardBody>
               </Card>
             </div>
-            <div className="col"></div>
-            <div className="col-3">
-              <UnsplashCredit />
-            </div>
-            <div className="col"></div>
           </div>
         </div>
       </div>
