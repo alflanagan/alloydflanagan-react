@@ -1,5 +1,3 @@
-import _ from 'lodash'
-
 import {
   VIEW_BLOG_LIST,
   VIEW_BLOG,
@@ -8,7 +6,7 @@ import {
   UPDATE_BLOG
 } from '../actions/types'
 
-export default (state = {}, action) => {
+const blog_reducers = (state = {}, action) => {
   switch (action.type) {
     case VIEW_BLOG:
     case UPDATE_BLOG:
@@ -22,3 +20,5 @@ export default (state = {}, action) => {
       return state
   }
 }
+
+export default blog_reducers;
