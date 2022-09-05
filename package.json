@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "description": "Builds my personal web site, alloydflanagan.com",
+  "type": "module",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -11,7 +12,9 @@
     "@testing-library/dom": "^8.17.1",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.1",
+    "@types/chai": "^4.3.3",
     "@types/lodash": "^4.14.184",
+    "@types/mocha": "^9.1.1",
     "@types/node": "^18.7.15",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
@@ -24,6 +27,8 @@
     "bfj": "^7.0.2",
     "browserslist": "^4.18.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.4.1",
     "dotenv": "^10.0.0",
@@ -37,11 +42,14 @@
     "eslint-webpack-plugin": "^3.2.0",
     "file-loader": "^6.2.0",
     "fs-extra": "^10.1.0",
+    "global-jsdom": "^8.5.0",
     "history": "^5.3.0",
     "html-webpack-plugin": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
+    "jsdom": "^20.0.0",
     "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^2.4.5",
+    "mocha": "^10.0.0",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-normalize": "^10.0.1",
@@ -61,6 +69,7 @@
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
     "ts-loader": "^9.3.1",
+    "ts-node": "^10.9.1",
     "typescript": "<4.8.0",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.10.0",
@@ -75,7 +84,8 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "test": "mocha "
   },
   "browserslist": {
     "production": [
@@ -94,5 +104,9 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@types/chai-as-promised": "^7",
+    "@types/jsdom": "^20"
   }
 }
