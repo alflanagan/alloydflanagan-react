@@ -1,7 +1,8 @@
 {
-  "name": "alloydflanagan-react",
-  "version": "0.1.0",
+  "name": "alloydflangan-react",
+  "version": "0.2.0",
   "private": true,
+  "description": "Builds my personal web site, alloydflanagan.com",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -18,7 +19,6 @@
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "axios": "^0.27.2",
-    "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
     "babel-preset-react-app": "^10.0.1",
     "bfj": "^7.0.2",
@@ -44,7 +44,6 @@
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^6.2.1",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
     "prettier": "^2.7.1",
@@ -59,19 +58,24 @@
     "resolve-url-loader": "^4.0.0",
     "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
-    "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.5",
+    "ts-loader": "^9.3.1",
     "typescript": "<4.8.0",
     "webpack": "^5.64.4",
+    "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.6.0",
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "lint": "npx eslint --fix src"
+    "build": "webpack --mode=production --node-env=production",
+    "lint": "npx eslint --fix src",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "browserslist": {
     "production": [
