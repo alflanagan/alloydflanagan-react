@@ -14,19 +14,16 @@ export const Menu = (props: MenuProps): JSX.Element => {
       className={`${cssClass} nav nav-masthead justify-content-center app-nav`}
     >
       <span className="nav-link">
-        <a href="/">Home</a>
+        <a href="#about_me">About Me</a>
       </span>
       <span className="nav-link">
-        <a href="/about_me">About Me</a>
+        <a href="#contact">Contact Me</a>
       </span>
       <span className="nav-link">
-        <a href="/contact">Contact Me</a>
+        <a href="#blog">Blog</a>
       </span>
       <span className="nav-link">
-        <a href="/blog">Blog</a>
-      </span>
-      <span className="nav-link">
-        <a href="/portfolio">Portfolio</a>
+        <a href="#portfolio">Portfolio</a>
       </span>
       {/* }
           <span className="nav-link"><a href="/accounts/logout">Logout</a></span>
