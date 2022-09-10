@@ -6,6 +6,7 @@
       "dom.iterable"
     ],
     "allowJs": true,
+    "checkJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -21,8 +22,5 @@
   },
   "include": [
     "src"
-  ],
-  "files": [
-    "src/index.tsx"
   ]
 }
