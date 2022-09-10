@@ -3,6 +3,7 @@ const path = require('path')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -23,9 +24,6 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
     }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
   module: {
     rules: [
@@ -59,8 +57,11 @@ const config = {
 module.exports = () => {
   if (isProduction) {
     config.mode = 'production'
-
     config.plugins.push(new MiniCssExtractPlugin())
+    config.optimization = {
+      minimize: true,
+      minimizer: [new TerserPlugin()],
+    }
   } else {
     config.mode = 'development'
   }
