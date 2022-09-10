@@ -1,8 +1,10 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as React from 'react'
 import { render, screen } from '@testing-library/react'
 import { Provider } from 'react-redux'
-import { store } from './app/store'
+import { store } from '../app/store'
 import { expect } from 'chai'
-import App from './App'
+import App from '../App'
 
 describe('class App', function () {
   it('renders my name', () => {

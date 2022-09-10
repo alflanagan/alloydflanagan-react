@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as React from 'react'
 import { Header } from './app/components/Header'
 import { Footer } from './app/components/Footer'
 import './App.css'

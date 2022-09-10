@@ -1,45 +1,53 @@
 import {
-  VIEW_BLOG_LIST,
-  VIEW_BLOG,
-  CREATE_BLOG,
-  DELETE_BLOG,
-  UPDATE_BLOG
+  VIEW_BLOG_LIST_TAG,
+  DELETE_BLOG_TAG,
+  UPDATE_BLOG_TAG,
+  VIEW_BLOG_TAG,
+  CREATE_BLOG_TAG,
 } from './types'
 import history from '../../history'
 import blogs from '../apis/blogs_api'
 import { Action, Dispatch, PayloadAction } from '@reduxjs/toolkit'
 import { AppDispatch, RootState } from '../store'
+import { AxiosResponse } from 'axios'
 
 export const viewBlog = (blogId: string): PayloadAction<string> => {
   return {
-    type: VIEW_BLOG,
-    payload: blogId
+    type: VIEW_BLOG_TAG,
+    payload: blogId,
   }
 }
 
 export const createBlog =
-  (formValues: unknown) =>
+  (formValues: FormData) =>
     async (dispatch: Dispatch, getState: () => RootState) => {
-      const { userId } = getState().auth
-      const response = await blogs.post('/blogs/', { ...formValues, userId })
+    // TODO: Implement users/authorization
+    // const { userId } = getState().auth
+      const response: AxiosResponse<unknown, unknown> = await blogs.post(
+        '/blogs/',
+        { ...formValues /* , userId */ }
+      )
 
-      dispatch({ type: CREATE_BLOG, payload: response.data })
+      dispatch({ type: CREATE_BLOG_TAG, payload: response.data })
       history.push('/')
     }
 
 export const viewBlogList = (): Action => {
   return {
-    type: VIEW_BLOG_LIST
+    type: VIEW_BLOG_LIST_TAG,
   }
 }
 
 export const updateBlog =
   (blogId: string, formValues: unknown) => async (dispatch: AppDispatch) => {
-    const response = await blogs.patch(`/blogs/${blogId}`, formValues)
+    const response: AxiosResponse<JSON, unknown> = await blogs.patch(
+      `/blogs/${blogId}`,
+      formValues
+    )
 
     dispatch({
-      type: UPDATE_BLOG,
-      payload: response.data
+      type: UPDATE_BLOG_TAG,
+      payload: response.data,
     })
     history.push('/')
   }
@@ -47,8 +55,8 @@ export const updateBlog =
 export const deleteBlog = (blogId: string) => async (dispatch: AppDispatch) => {
   await blogs.delete(`/blogs/${blogId}`)
   dispatch({
-    type: DELETE_BLOG,
-    payload: blogId
+    type: DELETE_BLOG_TAG,
+    payload: blogId,
   })
   history.push('/')
 }
