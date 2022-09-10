@@ -5,6 +5,12 @@
 		}
 	],
 	"settings": {
-		"standard.autoFixOnSave": true
+		"standard.autoFixOnSave": true,
+		"css.format.enable": false,
+		"scss.format.enable": false,
+		"less.format.enable": false,
+		"stylelint.packageManager": "yarn",
+		"stylelint.reportInvalidScopeDisables": true,
+		"stylelint.reportNeedlessDisables": true
 	}
 }
