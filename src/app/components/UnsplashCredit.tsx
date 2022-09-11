@@ -1,12 +1,10 @@
 /* eslint jsx-quotes: ["error", "prefer-double"] */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react'
-import {
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button
-} from 'reactstrap'
+import { Card, CardBody } from 'reactstrap'
 import './UnsplashCredit.css'
 
-export const UnsplashCredit = () => {
+export const UnsplashCredit = (): JSX.Element => {
   return (
     <Card id="background-image-box">
       <CardBody className="p-2">
@@ -19,17 +17,12 @@ export const UnsplashCredit = () => {
             title="Download free do whatever you want high-resolution photos from David Moum"
           >
             <span id="us-logo">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                 <title>unsplash-logo</title>
                 <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z" />
               </svg>
             </span>
-            <span id="photographer">
-              David Moum
-            </span>
+            <span id="photographer">David Moum</span>
           </a>
         </span>
       </CardBody>

@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as React from 'react'
 import { Card, CardText, CardBody } from 'reactstrap'
 import './Footer.css'
 
