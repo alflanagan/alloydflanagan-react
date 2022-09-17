@@ -1,6 +1,6 @@
 import { Card, CardText, CardBody } from 'reactstrap'
 
-import './ContactMe.css'
+import './ContactMe.less'
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import React from 'react'
 import { useStore } from 'react-redux'
