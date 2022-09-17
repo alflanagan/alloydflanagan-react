@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import * as React from 'react'
 import './Header.css'
-import { Menu } from './Menu'
+import { Tabs, TabTypes } from './Tabs'
 
 export const Header = (): JSX.Element => {
   return (
@@ -10,7 +10,7 @@ export const Header = (): JSX.Element => {
         <div>
           <h3 className="masthead-brand">A Lloyd Flanagan</h3>
         </div>
-        <Menu />
+        <Tabs default={TabTypes.Home} />
       </div>
     </header>
   )

@@ -69,3 +69,8 @@ footer {
   color: black;
   padding-left: 3px;
 }
+
+#copyright {
+  margin-top: 1.65rem;
+  opacity: 0.75;
+}

@@ -53,7 +53,7 @@ export const Footer = (): JSX.Element => {
             </div>
             <div className="col"></div>
             <div className="col-5">
-              <Card>
+              <Card id="copyright">
                 <CardBody className="p-1 text-dark">
                   <CardText>
                     &copy; A Lloyd Flanagan 2022 License GPL3.

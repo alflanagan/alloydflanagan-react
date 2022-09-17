@@ -1,13 +1,26 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import * as React from 'react'
 
-import './Menu.css'
+import './Tabs.css'
 
-interface MenuProps {
-  className?: string
+export enum TabTypes {
+  Home,
+  About,
+  Contact,
+  Portfolio,
+  Blog,
 }
 
-export const Menu = (props: MenuProps): JSX.Element => {
+export interface TabsProps {
+  className?: string
+  default: TabTypes
+}
+
+export interface TabsState {
+  showing: TabTypes
+}
+
+export const Tabs = (props: TabsProps): JSX.Element => {
   const cssClass = props.className ?? ''
   return (
     <nav

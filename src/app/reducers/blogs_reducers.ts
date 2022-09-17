@@ -1,7 +1,5 @@
-import { createReducer } from '@reduxjs/toolkit'
-
-import { ViewBlogAction, VIEW_BLOG_LIST_TAG } from '../actions/types'
-import { RootState } from '../store'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { VIEW_BLOG_TAG } from '../actions/types'
 
 // const blogReducers = (
 //   state: RootState = {},
@@ -21,18 +19,31 @@ import { RootState } from '../store'
 //   }
 // }
 
-const initialState: RootState = {}
+export interface BlogState {
+  showBlog: boolean
+  currentPost?: string
+}
 
-const blogReducers = createReducer(initialState, (builder) => {
-  builder.addCase(
-    VIEW_BLOG_LIST_TAG,
-    (state: RootState, action: ViewBlogAction): RootState => {
-      return {
-        ...state,
-        // ..._.mapKeys((action as PayloadAction).payload, 'id')
+const initialState: BlogState = {
+  showBlog: false,
+}
+
+export const blogSlice = createSlice({
+  name: 'blogs',
+  initialState,
+  reducers: {
+    view: (state, action: PayloadAction<string, string>) => {
+      if (action.type === VIEW_BLOG_TAG) {
+        return {
+          ...state,
+          showBlog: true,
+          currentPost: action.payload,
+        }
+      } else {
+        return state
       }
-    }
-  )
+    },
+  },
 })
 
-export default blogReducers
+export default blogSlice
