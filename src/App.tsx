@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { Header } from './app/components/Header'
 import { Footer } from './app/components/Footer'
+import { ContactMe } from './app/components/ContactMe'
 import './App.css'
 
 function App (): JSX.Element {
@@ -9,7 +10,7 @@ function App (): JSX.Element {
     <div className="app">
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Header />
-        <div id="content" />
+        <ContactMe />
         <Footer />
       </div>
     </div>
