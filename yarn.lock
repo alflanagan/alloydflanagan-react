@@ -648,15 +648,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ignore-styles@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@types/ignore-styles@npm:5.0.0"
-  dependencies:
-    "@types/node": "*"
-  checksum: be84ee03cc678b61fe8181112ca21ba65362267fc3ed43cae7b64e79149d7973ac652c4b2580b4a7368f0f5a0a69b1a3f00e7509049e3de439df0dc63ae48e25
-  languageName: node
-  linkType: hard
-
 "@types/jsdom@npm:^20.0.0":
   version: 20.0.0
   resolution: "@types/jsdom@npm:20.0.0"
@@ -682,10 +673,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4.14.184":
-  version: 4.14.184
-  resolution: "@types/lodash@npm:4.14.184"
-  checksum: 6d9a4d67f7f9d0ec3fd21174f3dd3d00629dc1227eb469450eace53adbc1f7e2330699c28d0fe093e5f0fef0f0e763098be1f779268857213224af082b62be21
+"@types/lodash@npm:^4.14.185":
+  version: 4.14.185
+  resolution: "@types/lodash@npm:4.14.185"
+  checksum: f81d13da5ecab110ca9c5c7cc2bedc3c9802a6acf668576aecd1b8f4b134ed81d06c15f1e600fb08f05975098280a0d97d30cddfc2cb39ec1c6b56e971ca53b3
   languageName: node
   linkType: hard
 
@@ -790,7 +781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/redux@npm:^3.6.0":
+"@types/redux@npm:^3.6.31":
   version: 3.6.31
   resolution: "@types/redux@npm:3.6.31"
   checksum: 7bfaa5c5390364d8ba4132033f9887f1c1ed96fda434d3f70be801e0997542a89c03dcd656e3bc8a1ea84bb6450e25e833cf17302dbd9055d6ff0e1f1b4f9a31
@@ -1439,14 +1430,13 @@ __metadata:
     "@testing-library/user-event": ^14.4.3
     "@types/chai": ^4.3.3
     "@types/chai-as-promised": ^7.1.5
-    "@types/ignore-styles": ^5.0.0
     "@types/jsdom": ^20.0.0
-    "@types/lodash": ^4.14.184
+    "@types/lodash": ^4.14.185
     "@types/mocha": ^9.1.1
     "@types/node": ^18.7.16
     "@types/react": ^18.0.19
     "@types/react-dom": ^18.0.6
-    "@types/redux": ^3.6.0
+    "@types/redux": ^3.6.31
     "@typescript-eslint/eslint-plugin": ^5.36.2
     "@typescript-eslint/parser": ^5.36.2
     axios: ^0.27.2
@@ -1470,7 +1460,6 @@ __metadata:
     history: ^5.3.0
     html-webpack-plugin: ^5.5.0
     identity-obj-proxy: ^3.0.0
-    ignore-styles: ^5.0.1
     jsdom: ^20.0.0
     lodash: ^4.17.21
     mini-css-extract-plugin: ^2.6.1
@@ -1494,6 +1483,7 @@ __metadata:
     terser-webpack-plugin: ^5.3.6
     ts-loader: ^9.3.1
     ts-node: ^10.9.1
+    tslib: ^2.4.0
     typescript: ^4.8.3
     webpack: ^5.74.0
     webpack-cli: ^4.10.0
@@ -4200,13 +4190,6 @@ __metadata:
   dependencies:
     harmony-reflect: ^1.4.6
   checksum: 97559f8ea2aeaa1a880d279d8c49550dce01148321e00a2102cda5ddf9ce622fa1d7f3efc7bed63458af78889de888fdaebaf31c816312298bb3fdd0ef8aaf2c
-  languageName: node
-  linkType: hard
-
-"ignore-styles@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "ignore-styles@npm:5.0.1"
-  checksum: a2e4436595b931f43ad852c9ace2edd45a9968d47cf22949c3b307f73174f56b6bed970ffd1f5735ca47aebd8da9bf75d9006d0a4be2230f80bce0ecedf8b924
   languageName: node
   linkType: hard
 
@@ -7764,7 +7747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.0.3":
+"tslib@npm:^2.0.3, tslib@npm:^2.4.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
