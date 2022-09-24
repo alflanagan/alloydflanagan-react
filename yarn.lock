@@ -537,10 +537,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.7.19":
+"@types/node@npm:*":
   version: 18.7.19
   resolution: "@types/node@npm:18.7.19"
   checksum: 879366b379599cd0e06bff86973c82497de57d23b113967d20cac94994acdf2c47b6fc5cb92d007a9ff1939bd037257a5f3965e7bbda70cfa6b949a40e4e14a8
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.7.20":
+  version: 18.7.20
+  resolution: "@types/node@npm:18.7.20"
+  checksum: 83905b5528afe8c4e3f5f33de2699e1a12064d0e1b89310b179ab1801fca73157158ecf84c8dac3681afa77026f12440d34c37bc1107ca461da8df0f086b09e9
   languageName: node
   linkType: hard
 
@@ -611,7 +618,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/redux@npm:^3.6.0":
+"@types/redux@npm:^3.6.31":
   version: 3.6.31
   resolution: "@types/redux@npm:3.6.31"
   checksum: 7bfaa5c5390364d8ba4132033f9887f1c1ed96fda434d3f70be801e0997542a89c03dcd656e3bc8a1ea84bb6450e25e833cf17302dbd9055d6ff0e1f1b4f9a31
@@ -1200,11 +1207,11 @@ __metadata:
     "@types/jsdom": ^20.0.0
     "@types/lodash": ^4.14.185
     "@types/mocha": ^9.1.1
-    "@types/node": ^18.7.19
+    "@types/node": ^18.7.20
     "@types/react": ^18.0.21
     "@types/react-dom": ^18.0.6
     "@types/react-redux": ^7.1.24
-    "@types/redux": ^3.6.0
+    "@types/redux": ^3.6.31
     "@typescript-eslint/eslint-plugin": ^5.38.0
     "@typescript-eslint/parser": ^5.38.0
     axios: ^0.27.2
@@ -1217,10 +1224,10 @@ __metadata:
     css-loader: ^6.7.1
     dotenv: ^10.0.0
     dotenv-expand: ^5.1.0
-    eslint: ^8.23.0
-    eslint-config-standard-with-typescript: ^22.0.0
+    eslint: ^8.24.0
+    eslint-config-standard-with-typescript: ^23.0.0
     eslint-plugin-import: ^2.26.0
-    eslint-plugin-n: ^15.2.5
+    eslint-plugin-n: ^15.3.0
     eslint-plugin-promise: ^6.0.1
     eslint-plugin-react: ^7.31.8
     file-loader: ^6.2.0
@@ -1239,7 +1246,7 @@ __metadata:
     prompts: ^2.4.2
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-redux: ^8.0.2
+    react-redux: ^8.0.4
     reactstrap: ^9.1.4
     resolve: ^1.22.1
     resolve-url-loader: ^5.0.0
@@ -2700,9 +2707,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard-with-typescript@npm:^22.0.0":
-  version: 22.0.0
-  resolution: "eslint-config-standard-with-typescript@npm:22.0.0"
+"eslint-config-standard-with-typescript@npm:^23.0.0":
+  version: 23.0.0
+  resolution: "eslint-config-standard-with-typescript@npm:23.0.0"
   dependencies:
     "@typescript-eslint/parser": ^5.0.0
     eslint-config-standard: 17.0.0
@@ -2713,7 +2720,7 @@ __metadata:
     eslint-plugin-n: ^15.0.0
     eslint-plugin-promise: ^6.0.0
     typescript: "*"
-  checksum: 4ed15e7383f8e4d657b5ba1fec52753024c3740decf98a737fe49467f913215f674d74515d40c0b692807f5b3ec519ec5b6a6e36ed39ea96f175e703c809dfa0
+  checksum: a6bc6758e3e203721cfa38a6e5e1437b38016aa72bf2e2855581fa65c0cf96531a3433a3625703a3740c10e9d654c08a8d8b6cc6688b3e8b48259a9390a2fcd7
   languageName: node
   linkType: hard
 
@@ -2786,7 +2793,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-n@npm:^15.2.5":
+"eslint-plugin-n@npm:^15.3.0":
   version: 15.3.0
   resolution: "eslint-plugin-n@npm:15.3.0"
   dependencies:
@@ -2898,7 +2905,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.23.0":
+"eslint@npm:^8.24.0":
   version: 8.24.0
   resolution: "eslint@npm:8.24.0"
   dependencies:
@@ -5927,7 +5934,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-redux@npm:^8.0.2":
+"react-redux@npm:^8.0.4":
   version: 8.0.4
   resolution: "react-redux@npm:8.0.4"
   dependencies:
