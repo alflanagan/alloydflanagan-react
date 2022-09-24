@@ -4,12 +4,14 @@ import {
   UPDATE_BLOG_TAG,
   VIEW_BLOG_TAG,
   CREATE_BLOG_TAG,
+  SHOW_TAB_TAG,
 } from './types'
 import history from '../../history'
 import blogs from '../apis/blogs_api'
 import { Action, Dispatch, PayloadAction } from '@reduxjs/toolkit'
 import { AppDispatch, RootState } from '../store'
 import { AxiosResponse } from 'axios'
+import { TabTypes } from '../components/Tabs'
 
 export const viewBlog = (blogId: string): PayloadAction<string> => {
   return {
@@ -49,7 +51,6 @@ export const updateBlog =
       type: UPDATE_BLOG_TAG,
       payload: response.data,
     })
-    history.push('/')
   }
 
 export const deleteBlog = (blogId: string) => async (dispatch: AppDispatch) => {
@@ -59,4 +60,11 @@ export const deleteBlog = (blogId: string) => async (dispatch: AppDispatch) => {
     payload: blogId,
   })
   history.push('/')
+}
+
+export const showTab = (tab: TabTypes) => async (dispatch: AppDispatch) => {
+  dispatch({
+    type: SHOW_TAB_TAG,
+    payload: tab,
+  })
 }

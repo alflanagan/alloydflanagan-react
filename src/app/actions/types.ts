@@ -6,12 +6,19 @@ export const CREATE_BLOG_TAG = 'CREATE_BLOG'
 export const DELETE_BLOG_TAG = 'DELETE_BLOG'
 export const UPDATE_BLOG_TAG = 'UPDATE_BLOG'
 
+export const SHOW_TAB_TAG = 'SHOW_TAB'
+
 export type VIEW_BLOG_LIST = typeof VIEW_BLOG_LIST_TAG
 export type VIEW_BLOG = typeof VIEW_BLOG_TAG
 export type CREATE_BLOG = typeof CREATE_BLOG_TAG
 export type DELETE_BLOG = typeof DELETE_BLOG_TAG
 export type UPDATE_BLOG = typeof UPDATE_BLOG_TAG
+export type SHOW_TAB = typeof SHOW_TAB_TAG
 
 export interface ViewBlogAction extends Action<VIEW_BLOG_LIST> {
+  payload: PayloadAction['payload']
+}
+
+export interface ShowTabAction extends Action<SHOW_TAB> {
   payload: PayloadAction['payload']
 }

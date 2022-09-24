@@ -12,7 +12,7 @@
   background-color: transparent;
 
   /* border-bottom: 0.25rem solid transparent; */
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .nav-masthead .nav-link a {
@@ -32,7 +32,7 @@
   margin-left: 1rem;
 }
 
-.nav-masthead .active {
+.nav-masthead .nav-link.active a {
   color: #fff;
   border-bottom-color: #fff;
 }

@@ -1,28 +1,31 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import { configureStore, ThunkAction, Action, PayloadAction } from '@reduxjs/toolkit'
+import { SHOW_TAB_TAG } from './actions/types'
+import { TabsState, TabTypes } from './components/Tabs'
 
-export interface RootState {
-  shownContact: boolean
+export interface RootState extends TabsState {
+
 }
 
 export const store = configureStore({
-  reducer: toggleContact,
+  reducer: selectTab,
   preloadedState: {
-    shownContact: false,
+    showing: TabTypes.Home,
   },
 })
 
-function toggleContact (
+function selectTab (
   state: RootState | undefined,
-  action: Action
+  action: PayloadAction
 ): RootState {
   if (state == null) {
-    return {
-      shownContact: true,
-    }
+    throw new Error('selectTab(): state not defined (shouldn\'t happen)')
+  }
+  if (action.payload == null || action.type !== SHOW_TAB_TAG) {
+    return state
   }
   return {
     ...state,
-    shownContact: !state.shownContact,
+    showing: action.payload,
   }
 }
 
