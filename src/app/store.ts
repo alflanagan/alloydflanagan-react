@@ -9,8 +9,8 @@ export interface RootState extends TabsState {
 export const store = configureStore({
   reducer: selectTab,
   preloadedState: {
-    showing: TabTypes.Home,
-  },
+    showing: TabTypes.Home
+  }
 })
 
 function selectTab (
@@ -25,7 +25,7 @@ function selectTab (
   }
   return {
     ...state,
-    showing: action.payload,
+    showing: action.payload
   }
 }
 

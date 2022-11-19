@@ -4,7 +4,7 @@ import {
   UPDATE_BLOG_TAG,
   VIEW_BLOG_TAG,
   CREATE_BLOG_TAG,
-  SHOW_TAB_TAG,
+  SHOW_TAB_TAG
 } from './types'
 import history from '../../history'
 import blogs from '../apis/blogs_api'
@@ -16,7 +16,7 @@ import { TabTypes } from '../components/Tabs'
 export const viewBlog = (blogId: string): PayloadAction<string> => {
   return {
     type: VIEW_BLOG_TAG,
-    payload: blogId,
+    payload: blogId
   }
 }
 
@@ -36,7 +36,7 @@ export const createBlog =
 
 export const viewBlogList = (): Action => {
   return {
-    type: VIEW_BLOG_LIST_TAG,
+    type: VIEW_BLOG_LIST_TAG
   }
 }
 
@@ -49,7 +49,7 @@ export const updateBlog =
 
     dispatch({
       type: UPDATE_BLOG_TAG,
-      payload: response.data,
+      payload: response.data
     })
   }
 
@@ -57,14 +57,14 @@ export const deleteBlog = (blogId: string) => async (dispatch: AppDispatch) => {
   await blogs.delete(`/blogs/${blogId}`)
   dispatch({
     type: DELETE_BLOG_TAG,
-    payload: blogId,
+    payload: blogId
   })
   history.push('/')
 }
 
-export const showTab = (tab: TabTypes) => async (dispatch: AppDispatch) => {
+export const showTab = (tab: TabTypes) => (dispatch: AppDispatch) => {
   dispatch({
     type: SHOW_TAB_TAG,
-    payload: tab,
+    payload: tab
   })
 }

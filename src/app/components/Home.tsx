@@ -11,8 +11,6 @@ export function Home (): JSX.Element | null {
   const store = useStore()
   const state = store.getState() as RootState
 
-  const tab = state.showing
-
   if (state.showing === TabTypes.Home) {
     return (
       <Card id="home-tab">

@@ -12,8 +12,6 @@ export function ContactMe (): JSX.Element | null {
   const state = store.getState() as RootState
   console.dir(state)
 
-  const tab = state.showing
-
   if (state.showing === TabTypes.Contact) {
     return (
       <Card id="contact-me">

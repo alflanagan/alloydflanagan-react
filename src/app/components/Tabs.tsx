@@ -23,7 +23,7 @@ export interface TabsState {
   showing: TabTypes
 }
 
-function setTab (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+function setTab (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>): void {
   // why is this necessary?
   const target = event.target as HTMLAnchorElement
   switch (target.id) {

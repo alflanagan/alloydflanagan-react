@@ -25,7 +25,7 @@ export interface BlogState {
 }
 
 const initialState: BlogState = {
-  showBlog: false,
+  showBlog: false
 }
 
 export const blogSlice = createSlice({
@@ -37,13 +37,13 @@ export const blogSlice = createSlice({
         return {
           ...state,
           showBlog: true,
-          currentPost: action.payload,
+          currentPost: action.payload
         }
       } else {
         return state
       }
-    },
-  },
+    }
+  }
 })
 
 export default blogSlice
